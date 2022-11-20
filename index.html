@@ -203,7 +203,7 @@
 
                 </div>
 
-                <div class="col col-lg-3 col-md-1 bg-ligth">
+                <div class="col col-lg-3 bg-ligth">
                     <div class="card">
                         <div class="card-body">
                             <img src="https://randomuser.me/api/portraits/women/80.jpg" class="card-img-top" alt="web">
@@ -214,7 +214,7 @@
 
                 </div>
 
-                <div class="col col-lg-3  col-md-1 bg-ligth">
+                <div class="col col-lg-3 bg-ligth">
                     <div class="card">
                         <div class="card-body">
                             <img src="https://randomuser.me/api/portraits/men/20.jpg" class="card-img-top" alt="web">
@@ -223,7 +223,7 @@
                         </div>
                     </div>
 
-                </div><div class="col col-lg-3 col-md-1 bg-ligth">
+                </div><div class="col col-lg-3 bg-ligth">
                     <div class="card">
                         <div class="card-body">
                             <img src="https://randomuser.me/api/portraits/women/60.jpg" class="card-img-top" alt="web">
@@ -269,34 +269,14 @@
                 </div>
                 <div class="col-md">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.8636547241013!2d8.34162181400846!3d4.962324596397517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10678652fce417c3%3A0x954054612329d04c!2sABC%20Transport!5e0!3m2!1sen!2sng!4v1665133042983!5m2!1sen!2sng" 
-                       width="600"
-                       height="300" 
+                       id="map"
+                       width="500"
+                       height="250" 
                        style="border:0;" 
                        allowfullscreen="" 
                        loading="lazy" 
                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-
-                
-
-
-
-<script>
-// TO MAKE THE MAP APPEAR YOU MUST
-// ADD YOUR ACCESS TOKEN FROM
-// https://account.mapbox.com
-mapboxgl.accessToken = '<your access token here>';
-const map = new mapboxgl.Map({
-    container: 'map', // container ID
-    style: 'mapbox://styles/mapbox/streets-v11', // style URL
-    center: [4.9757, 8.3417], // starting position [lng, lat]
-    zoom: 9, // starting zoom
-    projection: 'globe' // display the map as a 3D globe
-});
-map.on('style.load', () => {
-    map.setFog({}); // Set the default atmosphere style
-});
-</script>
             </div>
         </div>
     </section>
@@ -366,6 +346,24 @@ map.on('style.load', () => {
           First learn computer science and all the theory. Next develop a programming style. Then forget all that and just hack.-George Carrette
         </div>
     
-</section>-->
+</section>-
+
+<script>
+// TO MAKE THE MAP APPEAR YOU MUST
+// ADD YOUR ACCESS TOKEN FROM
+// https://account.mapbox.com
+mapboxgl.accessToken = '<your access token here>';
+const map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/mapbox/streets-v11', // style URL
+    center: [4.9757, 8.3417], // starting position [lng, lat]
+    zoom: 9, // starting zoom
+    projection: 'globe' // display the map as a 3D globe
+});
+map.on('style.load', () => {
+    map.setFog({}); // Set the default atmosphere style
+});
+</script>
+-->
 </body>
 </html>
